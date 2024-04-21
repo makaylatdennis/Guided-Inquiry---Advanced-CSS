@@ -1,0 +1,50 @@
+.flag{
+    display: grid;
+    grid-template-rows: repeat (13, 1fr);
+    width: 900px;
+    height: 600px ;
+    border: 2px solid black;
+}
+
+.stars{
+   position:absolute;
+    height: 280px;
+    width: 400px;
+    z-index: 1;
+
+
+}
+
+
+
+.red{
+    background-color: red;
+}
+
+.white{
+    background-color: white;
+}
+
+@media (max-width: 390px) {
+    .flag {
+        max-width: 300px; 
+        max-height: 200px;
+       }
+       .stars{
+        max-width: 133px;
+        max-height: 93px;
+       }
+}
+
+@media (max-width: 1024px) {
+    .flag {
+        max-width: 500px; 
+        max-height: 350px;
+       }
+       .stars{
+        max-width: 280px;
+        max-height: 180px;
+       }
+}
+
+
